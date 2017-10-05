@@ -1,0 +1,18 @@
+[
+	{
+		"model": "api.jobgroup",
+		"id": 1,
+		"fields": {
+			"job_group": "A",
+			"rate": 20	
+		}
+	},
+	{
+		"model": "api.jobgroup",
+		"id": 2,
+		"fields": {
+			"job_group": "B",
+			"rate": 30	
+		}
+	}
+]
