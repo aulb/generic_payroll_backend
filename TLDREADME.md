@@ -13,6 +13,7 @@ This component cooks up the data using *ReactTable*. Comes with a
 There are three tables that are used to create the API, fairly simple. All stored in SQLite for simplicity. I tried to follow best practices and approach to REST.
 ## Report Table
 The report table stores the user generated `report_id`. The `id` here is the primary key for this table. I believe that having a primary key is not inherently a bad decision to do, it future proofs against weird joins. Fast lookups when looking for duplicated `report_id`.
+
 | Column | Explanation |
 | --- | --- |
 | id | Primary key, future proofing |
@@ -21,6 +22,7 @@ The report table stores the user generated `report_id`. The `id` here is the pri
 
 ## Time Report Table
 The time report table stores the time report data supplied by the csv file. The `id` here also refers to the primary key of this table.
+
 | Time Report | Explanation |
 | --- | --- |
 | id | Primary key |
@@ -31,6 +33,7 @@ The time report table stores the time report data supplied by the csv file. The 
 
 ## Job Group Table
 The job group table stores information about different job group and pay rates. Having it on a table means that we may be able to keep track of historical data say a job group changes value in the future.
+
 | Job Group | Explanation |
 | --- | --- |
 | id | Primary key | 
